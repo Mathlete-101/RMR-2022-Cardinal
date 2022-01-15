@@ -24,6 +24,7 @@ public class WingardiumLeviosa extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
+    System.out.println("test" + Controller.Drive.get_secondary_vertical());
     levitationSystem.set(Controller.Drive.get_secondary_vertical());
   }
 

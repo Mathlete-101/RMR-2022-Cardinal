@@ -52,7 +52,7 @@ public class DriveTrain extends SubsystemBase {
 
   public void set(double speed, double rotation)
   {
-    drive.arcadeDrive(speed, rotation);
+    drive.arcadeDrive(0.1, rotation);
   }
 
   /**
@@ -79,7 +79,7 @@ public class DriveTrain extends SubsystemBase {
       motor.setNeutralMode(NeutralMode.Coast);
     }
 
-    set(0, 0);
+    // set(0, 0);
   }
 
   /**
